@@ -1,19 +1,23 @@
 'use strict';
 
 const express = require('express');
+
 const mongo = require('mongodb');
+
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+
 const cors = require('cors');
 
+const bodyParser = require('body-parser');
+
 const urlShort = require('./bin/validate');
+
 const app = express();
 
 const { URL } = require('url');
 
-const urlDB = process.env.MONGO_URI;
-
 const urlSave = require('./model/db');
+
 
 
 
