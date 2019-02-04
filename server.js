@@ -22,7 +22,8 @@ const urlSave = require('./model/db');
 
 
  
-mongoose.connect(urlDB,{ useNewUrlParser: true });
+mongoose.connect(process.env.MONGOLAB_URI, { useNewUrlParser: true });
+
 
 
 // Basic Configuration 
